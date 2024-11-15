@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #8EC5FC, #E0C3FC);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            
+                }
+
+        /* Cabecera con transparencia */
+        .header {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5); /* Transparencia */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px); /* Difuminado del fondo */
+        }
+
+        .option {
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff;
+            text-decoration: none;
+            background: linear-gradient(to right, #3498db, #2980b9);
+        }
+
+        .option:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Colores específicos para cada recuadro */
+        #inicio {
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+        }
+
+        #docentes {
+            background: linear-gradient(to right, #16a085, #0e6655);
+        }
+
+        #carrera {
+            background: linear-gradient(to right, #9b59b6, #8e44ad);
+        }
+
+        #sitios-amigos {
+            background: linear-gradient(to right, #e74c3c, #c0392b);
+        }
+
+        /* Contenido principal */
+        .content {
+            margin-top: 100px; /* Espacio para la cabecera fija */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            color: #444;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="header">
+        <a href="#" id="inicio" class="option">Inicio</a>
+        <a href="#" id="docentes" class="option">Docentes</a>
+        <a href="#" id="carrera" class="option">Carreras</a>
+        <a href="#" id="sitios-amigos" class="option">Sitios Amigos</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Bienvenido a la Pagina principal</h1>
+        <p>Explora las diferentes secciones para obtener información sobre nuestras carreras, docentes y mucho más.</p>
+    </div>
+</body>
+</html>

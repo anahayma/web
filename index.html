@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+		body {
+			font-family: 'Arial', sans-serif;
+			background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+			background-size: 400% 400%;
+			animation: gradientBG 12s ease infinite;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+
+		@keyframes gradientBG {
+			0% { background-position: 0% 50%; }
+			50% { background-position: 100% 50%; }
+			100% { background-position: 0% 50%; }
+		}
+
+		/* Contenedor del formulario */
+		#todo {
+			background: #f0f3f5;
+			border-radius: 15px;
+			width: 400px;
+			padding: 40px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		#todo:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		/* Título con color suave */
+		label {
+			font-size: 1.4em;
+			color: #34495e;
+			margin-bottom: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		/* Contenedor y estilo de los iconos */
+		.input-container {
+			position: relative;
+			width: 85%;
+			margin-bottom: 20px;
+		}
+
+		.input-container i {
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #3f2b96;
+			font-size: 1.2em;
+		}
+
+		/* Campos de entrada con bordes azulados */
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 12px 15px 12px 40px;
+			font-size: 1em;
+			color: #333;
+			background-color: #e8f0fe;
+			border: 2px solid #3f2b96;
+			border-radius: 8px;
+			outline: none;
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus {
+			border-color: #4caf50;
+			box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+		}
+
+		/* Botón de envío con gradiente y animación */
+		button {
+			width: 100%;
+			padding: 12px;
+			font-size: 1.1em;
+			font-weight: bold;
+			color: #fff;
+			background: linear-gradient(135deg, #4caf50, #3f2b96);
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			box-shadow: 0 4px 10px rgba(63, 43, 150, 0.4);
+			transition: background 0.3s ease, transform 0.2s ease;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background: linear-gradient(135deg, #3f2b96, #4caf50);
+			transform: translateY(-3px);
+		}
+
+		button:active {
+			transform: translateY(1px);
+		}
+	</style>
+</head>
+<body>
+	<form id="todo" action="">
+		<label>Formulario de Acceso</label>
+		<div class="input-container">
+			<i class="fas fa-user"></i>
+			<input type="text" placeholder="Nombre de usuario" name="nn" id="nn">
+		</div>
+		<div class="input-container">
+			<i class="fas fa-lock"></i>
+			<input type="password" placeholder="Contraseña" name="n2" id="n2">
+		</div>
+		<button type="button" onclick="aaa()">Enviar</button>
+	</form>
+
+	
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/datosM.js"></script>
+</body>
+</html>
